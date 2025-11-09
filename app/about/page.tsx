@@ -109,7 +109,7 @@ export default function AboutPage() {
             <h3 className="text-2xl font-bold text-ocean-800 mb-4">Our Promise</h3>
             <p className="text-gray-700">
               Consistent quality, competitive pricing, and reliable service. Your success is our 
-              success, and we're committed to your business growth.
+              success, and we&apos;re committed to your business growth.
             </p>
           </motion.div>
         </div>

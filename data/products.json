@@ -1,0 +1,67 @@
+[
+  {
+    "id": 1,
+    "name": "Premium Dried Cod",
+    "price": 45.99,
+    "unit": "per kg",
+    "image": "https://images.unsplash.com/photo-1544943910-4c1dc44aab44?w=800&h=600&fit=crop",
+    "description": "High-quality dried cod, perfect for traditional recipes"
+  },
+  {
+    "id": 2,
+    "name": "Sun-Dried Sardines",
+    "price": 28.50,
+    "unit": "per kg",
+    "image": "https://images.unsplash.com/photo-1558030006-450675393462?w=800&h=600&fit=crop",
+    "description": "Naturally sun-dried sardines, rich in flavor"
+  },
+  {
+    "id": 3,
+    "name": "Dried Anchovies",
+    "price": 32.00,
+    "unit": "per kg",
+    "image": "https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800&h=600&fit=crop",
+    "description": "Small dried anchovies, ideal for stocks and soups"
+  },
+  {
+    "id": 4,
+    "name": "Premium Dried Tuna",
+    "price": 55.75,
+    "unit": "per kg",
+    "image": "https://images.unsplash.com/photo-1544943910-4c1dc44aab44?w=800&h=600&fit=crop",
+    "description": "Premium grade dried tuna, excellent for grilling"
+  },
+  {
+    "id": 5,
+    "name": "Dried Mackerel",
+    "price": 38.90,
+    "unit": "per kg",
+    "image": "https://images.unsplash.com/photo-1558030006-450675393462?w=800&h=600&fit=crop",
+    "description": "Flavorful dried mackerel, perfect for curries"
+  },
+  {
+    "id": 6,
+    "name": "Dried Herring",
+    "price": 35.25,
+    "unit": "per kg",
+    "image": "https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800&h=600&fit=crop",
+    "description": "Traditional dried herring, great for smoking"
+  },
+  {
+    "id": 7,
+    "name": "Dried Salmon Strips",
+    "price": 62.50,
+    "unit": "per kg",
+    "image": "https://images.unsplash.com/photo-1544943910-4c1dc44aab44?w=800&h=600&fit=crop",
+    "description": "Premium dried salmon, tender and flavorful"
+  },
+  {
+    "id": 8,
+    "name": "Dried Shrimp",
+    "price": 42.00,
+    "unit": "per kg",
+    "image": "https://images.unsplash.com/photo-1558030006-450675393462?w=800&h=600&fit=crop",
+    "description": "Small dried shrimp, perfect for seasoning"
+  }
+]
+

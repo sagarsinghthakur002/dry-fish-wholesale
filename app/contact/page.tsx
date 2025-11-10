@@ -77,7 +77,7 @@ export default function ContactPage() {
 
             {/* WhatsApp Button */}
             <a
-              href="https://wa.me/15551234567"
+              href="https://wa.me/9779823407226"
               target="_blank"
               rel="noopener noreferrer"
               className="block bg-green-500 hover:bg-green-600 text-white font-semibold py-4 px-6 rounded-lg transition-colors duration-200 flex items-center justify-center gap-2 shadow-lg"

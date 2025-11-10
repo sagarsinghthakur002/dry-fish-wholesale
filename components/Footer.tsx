@@ -13,13 +13,13 @@ export default function Footer() {
       transition={{ duration: 0.5 }}
       className="bg-ocean-900 text-white mt-auto"
     >
-      <div className="container mx-auto px-4 py-12">
+      <div className="container mx-auto px-4 py-5">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Company Info */}
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <Fish className="w-6 h-6" />
-              <h3 className="text-xl font-bold">Ocean Catch</h3>
+              <img src="/logo.png" className="w-16 h-16 text-ocean-600" />
+              <h3 className="text-xl font-bold">Naved Supplier</h3>
             </div>
             <p className="text-ocean-200 mb-4">
               Premium quality dry fish wholesale supplier. Serving businesses with the finest seafood products for over two decades.
@@ -123,12 +123,12 @@ export default function Footer() {
               </li>
               <li className="flex items-start gap-2">
                 <MapPin className="w-5 h-5 mt-0.5 flex-shrink-0" />
-                <span>123 Harbor Street, Coastal City, CC 12345</span>
+                <span>Balkhu, kathmandu </span>
               </li>
             </ul>
           </div>
         </div>
-        <div className="border-t border-ocean-800 mt-8 pt-8 text-center text-ocean-300">
+        <div className="border-t border-ocean-800 mt-8 pt-5 text-center text-ocean-300">
           <p>&copy; {new Date().getFullYear()} sagar thakur. All rights reserved.</p>
         </div>
       </div>

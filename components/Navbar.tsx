@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { Fish } from "lucide-react";
+
 import { useState } from "react";
 
 export default function Navbar() {
@@ -16,7 +16,7 @@ export default function Navbar() {
       className="bg-white/95 backdrop-blur-sm shadow-md sticky top-0 z-50"
     >
       <div className="container mx-auto px-4 py-4">
-        <div className="flex items-center justify-between">
+        <div className="flex items-center justify-between mx-10">
           <Link href="/" className="flex items-center text-2xl font-bold text-ocean-700">
             <img src="/logo.png" className="w-28 h-28 -my-9  text-ocean-600" />
             <span>Naved Supplier</span>
@@ -30,18 +30,21 @@ export default function Navbar() {
             >
               Home
             </Link>
-            <Link
-              href="/products"
-              className="text-ocean-700 hover:text-coral-600 transition-colors font-medium"
-            >
-              Products
-            </Link>
+
             <Link
               href="/about"
               className="text-ocean-700 hover:text-coral-600 transition-colors font-medium"
             >
               About
             </Link>
+
+            <Link
+              href="/products"
+              className="text-ocean-700 hover:text-coral-600 transition-colors font-medium"
+            >
+              Products
+            </Link>
+
             <Link
               href="/contact"
               className="text-ocean-700 hover:text-coral-600 transition-colors font-medium"
@@ -89,17 +92,17 @@ export default function Navbar() {
               Home
             </Link>
             <Link
+              href="/about"
+              onClick={() => setIsOpen(false)}
+              className="block text-ocean-700 hover:text-coral-600 transition-colors font-medium"
+            >
+            <Link
               href="/products"
               onClick={() => setIsOpen(false)}
               className="block text-ocean-700 hover:text-coral-600 transition-colors font-medium"
             >
               Products
             </Link>
-            <Link
-              href="/about"
-              onClick={() => setIsOpen(false)}
-              className="block text-ocean-700 hover:text-coral-600 transition-colors font-medium"
-            >
               About
             </Link>
             <Link

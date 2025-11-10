@@ -22,8 +22,20 @@ export default function ProductCard({
   description,
 }: ProductCardProps) {
   const handleRequestQuote = () => {
-    // In a real app, this would open a modal or navigate to a quote page
-    alert(`Quote request for ${name}. We'll contact you soon!`);
+    // WhatsApp phone number (update this with your actual WhatsApp business number)
+    const phoneNumber = "15551234567"; // Format: country code + number without + or spaces
+    
+    // Create the message with product details
+    const message = encodeURIComponent(
+      `Hello! I'm interested in getting a quote for:\n\n` +
+      `Product: ${name}\n` +
+      `Price: $${price.toFixed(2)}/${unit}\n\n` +
+      `Please provide more information about bulk pricing and availability.`
+    );
+    
+    // Open WhatsApp with pre-filled message
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`;
+    window.open(whatsappUrl, "_blank");
   };
 
   return (

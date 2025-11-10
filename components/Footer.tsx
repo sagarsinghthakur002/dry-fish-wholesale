@@ -129,7 +129,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="border-t border-ocean-800 mt-8 pt-8 text-center text-ocean-300">
-          <p>&copy; {new Date().getFullYear()} Ocean Catch. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} sagar thakur. All rights reserved.</p>
         </div>
       </div>
     </motion.footer>

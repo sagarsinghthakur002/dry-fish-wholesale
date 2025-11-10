@@ -23,7 +23,7 @@ export default function ProductCard({
 }: ProductCardProps) {
   const handleRequestQuote = () => {
     // WhatsApp phone number (update this with your actual WhatsApp business number)
-    const phoneNumber = "15551234567"; // Format: country code + number without + or spaces
+    const phoneNumber = "+977 9823407226"; // Format: country code + number without + or spaces
     
     // Create the message with product details
     const message = encodeURIComponent(

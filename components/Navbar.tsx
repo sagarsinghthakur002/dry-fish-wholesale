@@ -17,9 +17,9 @@ export default function Navbar() {
     >
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
-          <Link href="/" className="flex items-center gap-2 text-2xl font-bold text-ocean-700">
-            <Fish className="w-8 h-8 text-ocean-600" />
-            <span>Ocean Catch</span>
+          <Link href="/" className="flex items-center text-2xl font-bold text-ocean-700">
+            <img src="/logo.png" className="w-28 h-28 -my-9  text-ocean-600" />
+            <span>Naved Supplier</span>
           </Link>
           
           {/* Desktop Navigation */}

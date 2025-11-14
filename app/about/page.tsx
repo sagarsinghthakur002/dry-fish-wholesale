@@ -15,7 +15,7 @@ export default function AboutPage() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h1 className="text-5xl font-bold text-ocean-800 mb-4">About Ocean Catch</h1>
+          <h1 className="text-5xl font-bold text-ocean-800 mb-4">About Miksani Supplier</h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Your trusted partner in premium dry fish wholesale for over two decades
           </p>

@@ -91,11 +91,17 @@ export default function Navbar() {
             >
               Home
             </Link>
+
+
             <Link
               href="/about"
               onClick={() => setIsOpen(false)}
               className="block text-ocean-700 hover:text-coral-600 transition-colors font-medium"
             >
+               About
+            </Link>
+
+            
             <Link
               href="/products"
               onClick={() => setIsOpen(false)}
@@ -103,8 +109,8 @@ export default function Navbar() {
             >
               Products
             </Link>
-              About
-            </Link>
+
+             
             <Link
               href="/contact"
               onClick={() => setIsOpen(false)}

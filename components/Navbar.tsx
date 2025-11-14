@@ -17,8 +17,8 @@ export default function Navbar() {
     >
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between mx-10">
-          <Link href="/" className="flex items-center text-2xl font-bold text-ocean-700">
-            <img src="/logo.png" className="w-28 h-28 -my-9  text-ocean-600" />
+          <Link href="/" className="flex items-center text-[1.3rem] font-bold text-ocean-700">
+            <img src="/logo.png" className="lg:w-28 lg:h-28 w-24 h-24 -my-9  text-ocean-600" />
             <span>Miksani Supplier</span>
           </Link>
           

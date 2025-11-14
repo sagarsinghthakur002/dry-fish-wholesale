@@ -20,7 +20,7 @@ export default function Home() {
             className="text-center mb-12"
           >
             <h2 className="text-4xl font-bold text-ocean-800 mb-4">
-              Why Choose Ocean Catch?
+              Why Choose Miksani Supplier?
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
               We deliver excellence in every batch, ensuring your business gets the best quality products.

@@ -40,7 +40,7 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold text-ocean-800 mb-2">Phone</h3>
-                  <p className="text-gray-700 mb-1">+1 (555) 123-4567</p>
+                  <p className="text-gray-700 mb-1">+977 9813773786</p>
                   <p className="text-sm text-gray-500">Mon-Fri: 8AM - 6PM EST</p>
                 </div>
               </div>
@@ -53,7 +53,7 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold text-ocean-800 mb-2">Email</h3>
-                  <p className="text-gray-700 mb-1">info@oceancatch.com</p>
+                  <p className="text-gray-700 mb-1">info@.com</p>
                   <p className="text-sm text-gray-500">We respond within 24 hours</p>
                 </div>
               </div>
@@ -67,9 +67,8 @@ export default function ContactPage() {
                 <div>
                   <h3 className="text-xl font-semibold text-ocean-800 mb-2">Address</h3>
                   <p className="text-gray-700">
-                    123 Harbor Street<br />
-                    Coastal City, CC 12345<br />
-                    United States
+                    M7QX+9XW, Kathmandu 44600<br />
+                    kushleshwar Balkhu, kathmandu
                   </p>
                 </div>
               </div>
@@ -77,7 +76,7 @@ export default function ContactPage() {
 
             {/* WhatsApp Button */}
             <a
-              href="https://wa.me/9779823407226"
+              href="https://wa.me/9779813773786"
               target="_blank"
               rel="noopener noreferrer"
               className="block bg-green-500 hover:bg-green-600 text-white font-semibold py-4 px-6 rounded-lg transition-colors duration-200 flex items-center justify-center gap-2 shadow-lg"
@@ -98,7 +97,7 @@ export default function ContactPage() {
         >
           <div className="w-full h-96">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.184132576894!2d-73.98811768459418!3d40.75889597932681!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25855c6480299%3A0x55194ec5a1ae072e!2sTimes%20Square!5e0!3m2!1sen!2sus!4v1234567890123!5m2!1sen!2sus"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.9391476664673!2d85.300006!3d27.688275599999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19000465aee3%3A0xf54b87b230d605fe!2sMiksani%20sidra%20pasal!5e0!3m2!1sen!2snp!4v1763140094344!5m2!1sen!2snp"
               width="100%"
               height="100%"
               style={{ border: 0 }}

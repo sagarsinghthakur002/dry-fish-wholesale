@@ -19,7 +19,7 @@ export default function Footer() {
           <div>
             <div className="flex items-center gap-2 mb-4">
               <img src="/logo.png" className="w-16 h-16 text-ocean-600" />
-              <h3 className="text-xl font-bold">Naved Supplier</h3>
+              <h3 className="text-xl font-bold">Miksani Supplier</h3>
             </div>
             <p className="text-ocean-200 mb-4">
               Premium quality dry fish wholesale supplier. Serving businesses with the finest seafood products for over two decades.
@@ -119,11 +119,11 @@ export default function Footer() {
               </li>
               <li className="flex items-start gap-2">
                 <Mail className="w-5 h-5 mt-0.5 flex-shrink-0" />
-                <span>info@sagar.com</span>
+                <span>info@gmai.com</span>
               </li>
               <li className="flex items-start gap-2">
                 <MapPin className="w-5 h-5 mt-0.5 flex-shrink-0" />
-                <span>Balkhu, kathmandu </span>
+                <span>kushleshwar Balkhu, kathmandu </span>
               </li>
             </ul>
           </div>

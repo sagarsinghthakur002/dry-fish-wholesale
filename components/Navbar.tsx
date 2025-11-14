@@ -19,7 +19,7 @@ export default function Navbar() {
         <div className="flex items-center justify-between mx-10">
           <Link href="/" className="flex items-center text-2xl font-bold text-ocean-700">
             <img src="/logo.png" className="w-28 h-28 -my-9  text-ocean-600" />
-            <span>Naved Supplier</span>
+            <span>Miksani Supplier</span>
           </Link>
           
           {/* Desktop Navigation */}
@@ -101,7 +101,7 @@ export default function Navbar() {
                About
             </Link>
 
-            
+
             <Link
               href="/products"
               onClick={() => setIsOpen(false)}

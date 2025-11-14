@@ -4,7 +4,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Ocean Catch - Premium Dry Fish Wholesale Supplier",
+  title: "Miksani - Premium Dry Fish Wholesale Supplier",
   description: "Premium quality dry fish wholesale supplier. Serving businesses with the finest seafood products for over two decades.",
 };
 

@@ -15,7 +15,7 @@ export default function Navbar() {
       transition={{ duration: 0.5 }}
       className="bg-white/95 backdrop-blur-sm shadow-md sticky top-0 z-50"
     >
-      <div className="container mx-auto px-4 py-4">
+      <div className="container mx-auto  py-4">
         <div className="flex items-center justify-between mx-5">
           <Link href="/" className="flex items-center text-[1.3rem] font-bold text-ocean-700">
             <img src="/logo.png" className="lg:w-28 lg:h-28 w-24 h-24 -my-9  text-ocean-600" />

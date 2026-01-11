@@ -3,11 +3,12 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { Fish, Target, Heart, Award } from "lucide-react";
+import abuti from "@/public/about.png"
 
 export default function AboutPage() {
   return (
     <div className="min-h-screen py-12">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-10">
         {/* Hero Section */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -32,7 +33,7 @@ export default function AboutPage() {
             <h2 className="text-4xl font-bold text-ocean-800 mb-6">Our Story</h2>
             <div className="space-y-4 text-gray-700 text-lg">
               <p>
-                Founded in 2003, Ocean Catch began as a small family business with a simple mission: 
+                Founded in 2003, Miksani  began as a small family business with a simple mission: 
                 to provide the highest quality dried seafood products to restaurants and retailers 
                 across the country.
               </p>
@@ -57,7 +58,7 @@ export default function AboutPage() {
             className="relative h-96 rounded-lg overflow-hidden shadow-xl"
           >
             <Image
-              src="https://images.unsplash.com/photo-1558030006-450675393462?w=800&h=600&fit=crop"
+              src={abuti}
               alt="Our team"
               fill
               className="object-cover"

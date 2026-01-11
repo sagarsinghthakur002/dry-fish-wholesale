@@ -13,12 +13,12 @@ export default function Navbar() {
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.5 }}
-      className="bg-white/95 backdrop-blur-sm shadow-md sticky top-0 z-50"
+      className=" bg-ocean-900 backdrop-blur-md shadow-md sticky top-0 z-50 text-white"
     >
-      <div className="container mx-auto  py-4">
-        <div className="flex items-center justify-between mx-5">
-          <Link href="/" className="flex items-center text-[1.3rem] font-bold text-ocean-700">
-            <img src="/logo.png" className="lg:w-28 lg:h-28 w-24 h-24 -my-9  text-ocean-600" />
+      <div className="container mx-auto  py-4  ">
+        <div className="flex items-center justify-between mx-5 px-10 font-bold">
+          <Link href="/" className="flex items-center text-[1.3rem] font-bold text-white">
+            <img src="/logo.png" className="lg:w-28 lg:h-28 w-24 h-24 -my-9  text-white" />
             <span>Miksani Supplier</span>
           </Link>
           
@@ -26,28 +26,29 @@ export default function Navbar() {
           <div className="hidden md:flex gap-6">
             <Link
               href="/"
-              className="text-ocean-700 hover:text-coral-600 transition-colors font-medium"
+              className=" hover:text-coral-600 transition-colors font-bold text-white"
             >
               Home
             </Link>
 
             <Link
               href="/about"
-              className="text-ocean-700 hover:text-coral-600 transition-colors font-medium"
+              className="text-white hover:text-coral-600 transition-colors font-bo
+            ld"
             >
               About
             </Link>
 
             <Link
               href="/products"
-              className="text-ocean-700 hover:text-coral-600 transition-colors font-medium"
+              className="text-white hover:text-coral-600 transition-colors font-bold"
             >
               Products
             </Link>
 
             <Link
               href="/contact"
-              className="text-ocean-700 hover:text-coral-600 transition-colors font-medium"
+              className="text-white hover:text-coral-600 transition-colors font-bold"
             >
               Contact
             </Link>
@@ -56,7 +57,7 @@ export default function Navbar() {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="md:hidden text-ocean-700"
+            className="md:hidden text-white"
             aria-label="Toggle menu"
           >
             <svg
@@ -87,7 +88,7 @@ export default function Navbar() {
             <Link
               href="/"
               onClick={() => setIsOpen(false)}
-              className="block text-ocean-700 hover:text-coral-600 transition-colors font-medium"
+              className="block text-white hover:text-coral-600 transition-colors font-bold"
             >
               Home
             </Link>
@@ -96,7 +97,7 @@ export default function Navbar() {
             <Link
               href="/about"
               onClick={() => setIsOpen(false)}
-              className="block text-ocean-700 hover:text-coral-600 transition-colors font-medium"
+              className="block text-white hover:text-coral-600 transition-colors font-bold"
             >
                About
             </Link>
@@ -105,7 +106,7 @@ export default function Navbar() {
             <Link
               href="/products"
               onClick={() => setIsOpen(false)}
-              className="block text-ocean-700 hover:text-coral-600 transition-colors font-medium"
+              className="block text-white hover:text-coral-600 transition-colors font-bold"
             >
               Products
             </Link>
@@ -114,7 +115,7 @@ export default function Navbar() {
             <Link
               href="/contact"
               onClick={() => setIsOpen(false)}
-              className="block text-ocean-700 hover:text-coral-600 transition-colors font-medium"
+              className="block text-white hover:text-coral-600 transition-colors font-bold"
             >
               Contact
             </Link>

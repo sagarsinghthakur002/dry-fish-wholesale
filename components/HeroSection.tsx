@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { ArrowRight, ShoppingBag, Phone } from "lucide-react";
+import bg from "@/public/bg.png";
 
 export default function HeroSection() {
   return (
@@ -10,17 +11,16 @@ export default function HeroSection() {
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <div
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          className="absolute inset-0 bg-cover bg-top bg-no-repeat"
           style={{
-            backgroundImage:
-              "url('https://images.unsplash.com/photo-1544943910-4c1dc44aab44?w=1920&h=1080&fit=crop')",
+            backgroundImage: `url(${bg.src})`,
           }}
         />
-        <div className="absolute inset-0 bg-ocean-900/70" />
+        <div className="absolute inset-0" />
       </div>
 
       {/* Content */}
-      <div className="relative z-10 container mx-auto px-4 py-20 text-center">
+      <div className="relative z-10 container mx-auto px-4 py-14 text-center">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
@@ -35,7 +35,7 @@ export default function HeroSection() {
           >
             Premium Dry Fish
             <br />
-            <span className="text-coral-400">Wholesale Supplier</span>
+            <span className="text-ocean-500">Wholesale Supplier</span>
           </motion.h1>
 
           <motion.p
@@ -89,5 +89,6 @@ export default function HeroSection() {
     </div>
   );
 }
+
 
 

@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  --background: #fefaf6;
+  --background: ##0F2A3D;
   --foreground: #0c4a6e;
 }
 
@@ -18,5 +18,6 @@ body {
     text-wrap: balance;
   }
 }
+
 
 

@@ -14,7 +14,7 @@ export default function Footer() {
       className="bg-ocean-900 text-white mt-auto"
     >
       <div className="container mx-auto px-4 py-5">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 lg:px-10">
           {/* Company Info */}
           <div>
             <div className="flex items-center gap-2 mb-4">
@@ -135,5 +135,6 @@ export default function Footer() {
     </motion.footer>
   );
 }
+
 
 

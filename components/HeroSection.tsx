@@ -8,15 +8,18 @@ import bg from "@/public/bg.png";
 export default function HeroSection() {
   return (
     <div className="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
-      {/* Background Image with Overlay */}
+
+      {/* Background */}
       <div className="absolute inset-0 z-0">
         <div
-          className="absolute inset-0 bg-cover bg-top bg-no-repeat"
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat scale-105"
           style={{
             backgroundImage: `url(${bg.src})`,
           }}
         />
-        <div className="absolute inset-0" />
+
+        {/* Premium Overlay */}
+        <div className="absolute inset-0 bg-gradient-to-r from-[#041C32]/90 via-[#04293A]/75 to-[#064663]/80" />
       </div>
 
       {/* Content */}
@@ -27,68 +30,63 @@ export default function HeroSection() {
           transition={{ duration: 0.8 }}
           className="max-w-4xl mx-auto"
         >
+
+          {/* Heading */}
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-5xl md:text-7xl font-bold text-white mb-6"
+            className="text-5xl md:text-7xl font-extrabold text-white mb-6 leading-tight"
           >
             Premium Dry Fish
             <br />
-            <span className="text-ocean-500">Wholesale Supplier</span>
+            <span className="text-[#F2A900]">
+              Wholesale Supplier
+            </span>
           </motion.h1>
 
+          {/* Paragraph */}
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="text-xl md:text-2xl text-ocean-100 mb-8 max-w-2xl mx-auto"
+            className="text-xl md:text-2xl text-gray-200 mb-10 max-w-3xl mx-auto leading-relaxed"
           >
-            Serving businesses with the finest quality dried seafood products for over two decades. Trusted by restaurants and retailers nationwide.
+            Serving businesses with the finest quality dried seafood
+            products for over two decades. Trusted by restaurants
+            and retailers nationwide.
           </motion.p>
 
+          {/* Buttons */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
-            className="flex flex-col sm:flex-row gap-4 justify-center items-center"
+            className="flex flex-col sm:flex-row gap-5 justify-center items-center"
           >
+
+            {/* Shop Button */}
             <Link
               href="/products"
-              className="group bg-coral-600 hover:bg-coral-700 text-white font-semibold py-4 px-8 rounded-lg transition-all duration-200 flex items-center gap-2 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+              className="group bg-[#F97316] hover:bg-[#EA580C] text-white font-semibold py-4 px-8 rounded-xl transition-all duration-300 flex items-center gap-2 shadow-2xl hover:-translate-y-1"
             >
               <ShoppingBag className="w-5 h-5" />
               Shop Now
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </Link>
+
+            {/* Contact Button */}
             <Link
               href="/contact"
-              className="group bg-white/10 hover:bg-white/20 backdrop-blur-sm text-white font-semibold py-4 px-8 rounded-lg transition-all duration-200 flex items-center gap-2 border-2 border-white/30 hover:border-white/50"
+              className="group bg-white/10 hover:bg-white/20 backdrop-blur-md text-white font-semibold py-4 px-8 rounded-xl transition-all duration-300 flex items-center gap-2 border border-white/30 hover:border-white/60"
             >
               <Phone className="w-5 h-5" />
               Contact Us
             </Link>
+
           </motion.div>
         </motion.div>
       </div>
-
-      {/* Wave Decoration */}
-      {/* <div className="absolute bottom-0 left-0 right-0 z-10">
-        <svg
-          viewBox="0 0 1440 120"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-          className="w-full h-20"
-        >
-          <path
-            d="M0 120L60 105C120 90 240 60 360 45C480 30 600 30 720 37.5C840 45 960 60 1080 67.5C1200 75 1320 75 1380 75L1440 75V120H1380C1320 120 1200 120 1080 120C960 120 840 120 720 120C600 120 480 120 360 120C240 120 120 120 60 120H0Z"
-            fill="var(--background)"
-          />
-        </svg>
-      </div> */}
     </div>
   );
 }
-
-
-

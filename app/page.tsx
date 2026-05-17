@@ -19,7 +19,7 @@ export default function Home() {
             transition={{ duration: 0.6 }}
             className="text-center mb-12"
           >
-            <h2 className="text-4xl font-bold text-ocean-800 mb-4">
+            <h2 className="text-4xl font-bold text-ocean-900 mb-4">
               Why Choose Miksani Supplier?
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
@@ -27,7 +27,7 @@ export default function Home() {
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-ocean-900 font-bold">
             {[
               {
                 icon: Award,

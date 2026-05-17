@@ -2,116 +2,178 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { Fish, Target, Heart, Award } from "lucide-react";
-import abuti from "@/public/about.png"
+import {
+  Target,
+  Heart,
+  Award,
+} from "lucide-react";
+
+import abuti from "@/public/about.png";
 
 export default function AboutPage() {
   return (
-    <div className="min-h-screen py-12">
-      <div className="container mx-auto px-10">
+    <div className="min-h-screen bg-[#F8FAFC] py-16">
+
+      <div className="container mx-auto px-6 lg:px-12">
+
         {/* Hero Section */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="text-center mb-16"
+          className="text-center mb-20"
         >
-          <h1 className="text-5xl font-bold text-ocean-800 mb-4">About Miksani Supplier</h1>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Your trusted partner in premium dry fish wholesale for over two decades
+
+          <h1 className="text-5xl md:text-6xl font-extrabold text-[#041C32] mb-6">
+            About{" "}
+            <span className="text-[#F2A900]">
+              Miksani Supplier
+            </span>
+          </h1>
+
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+            Your trusted partner in premium dry fish wholesale
+            for over two decades.
           </p>
         </motion.div>
 
         {/* Story Section */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-14 items-center mb-24">
+
+          {/* Text */}
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="text-4xl font-bold text-ocean-800 mb-6">Our Story</h2>
-            <div className="space-y-4 text-gray-700 text-lg">
+
+            <h2 className="text-4xl font-bold text-[#041C32] mb-8">
+              Our Story
+            </h2>
+
+            <div className="space-y-5 text-gray-700 text-lg leading-relaxed">
+
               <p>
-                Founded in 2003, Miksani  began as a small family business with a simple mission: 
-                to provide the highest quality dried seafood products to restaurants and retailers 
-                across the country.
+                Founded in 2003, Miksani Supplier began as a
+                small family business with a simple mission:
+                delivering the highest quality dried seafood
+                products to restaurants and retailers.
               </p>
+
               <p>
-                What started as a local supplier has grown into one of the most trusted wholesale 
-                distributors in the industry. Our commitment to quality, reliability, and customer 
-                service has earned us partnerships with hundreds of businesses nationwide.
+                Over the years, we have grown into one of the
+                most trusted wholesale suppliers in the industry,
+                known for quality, reliability, and customer
+                satisfaction.
               </p>
+
               <p>
-                Today, we source our products directly from sustainable fisheries, ensuring every 
-                batch meets our strict quality standards. Our state-of-the-art processing facilities 
-                maintain the natural flavors and nutritional value of our products.
+                We work directly with trusted fisheries and
+                maintain strict quality standards to ensure
+                freshness, flavor, and premium seafood products
+                for our customers.
               </p>
+
             </div>
           </motion.div>
 
+          {/* Image */}
           <motion.div
             initial={{ opacity: 0, x: 20 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="relative h-96 rounded-lg overflow-hidden shadow-xl"
+            className="relative h-[450px] rounded-3xl overflow-hidden shadow-2xl"
           >
+
             <Image
               src={abuti}
-              alt="Our team"
+              alt="About us"
               fill
-              className="object-cover"
+              className="object-cover hover:scale-105 transition-transform duration-700"
               sizes="(max-width: 1024px) 100vw, 50vw"
             />
+
+            <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
+
           </motion.div>
         </div>
 
-        {/* Mission & Values */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20">
+        {/* Cards */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-24">
+
+          {/* Mission */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="bg-white p-8 rounded-lg shadow-lg"
+            className="bg-white rounded-3xl p-8 shadow-xl border border-gray-100 hover:-translate-y-2 transition-all duration-300"
           >
-            <Target className="w-12 h-12 text-ocean-600 mb-4" />
-            <h3 className="text-2xl font-bold text-ocean-800 mb-4">Our Mission</h3>
-            <p className="text-gray-700">
-              To provide premium quality dry fish products while maintaining sustainable practices 
-              and building lasting partnerships with our clients.
+
+            <div className="bg-[#F2A900]/10 w-16 h-16 rounded-2xl flex items-center justify-center mb-6">
+              <Target className="w-8 h-8 text-[#F2A900]" />
+            </div>
+
+            <h3 className="text-2xl font-bold text-[#041C32] mb-4">
+              Our Mission
+            </h3>
+
+            <p className="text-gray-600 leading-relaxed">
+              To provide premium quality dry fish products
+              while maintaining sustainable sourcing and
+              building long-term customer partnerships.
             </p>
+
           </motion.div>
 
+          {/* Values */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.1 }}
-            className="bg-white p-8 rounded-lg shadow-lg"
+            className="bg-white rounded-3xl p-8 shadow-xl border border-gray-100 hover:-translate-y-2 transition-all duration-300"
           >
-            <Heart className="w-12 h-12 text-coral-600 mb-4" />
-            <h3 className="text-2xl font-bold text-ocean-800 mb-4">Our Values</h3>
-            <p className="text-gray-700">
-              Quality, integrity, and customer satisfaction are at the heart of everything we do. 
-              We believe in fair trade and sustainable sourcing.
+
+            <div className="bg-[#F97316]/10 w-16 h-16 rounded-2xl flex items-center justify-center mb-6">
+              <Heart className="w-8 h-8 text-[#F97316]" />
+            </div>
+
+            <h3 className="text-2xl font-bold text-[#041C32] mb-4">
+              Our Values
+            </h3>
+
+            <p className="text-gray-600 leading-relaxed">
+              Quality, integrity, and customer satisfaction
+              remain at the center of everything we do.
             </p>
+
           </motion.div>
 
+          {/* Promise */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="bg-white p-8 rounded-lg shadow-lg"
+            className="bg-white rounded-3xl p-8 shadow-xl border border-gray-100 hover:-translate-y-2 transition-all duration-300"
           >
-            <Award className="w-12 h-12 text-sandy-600 mb-4" />
-            <h3 className="text-2xl font-bold text-ocean-800 mb-4">Our Promise</h3>
-            <p className="text-gray-700">
-              Consistent quality, competitive pricing, and reliable service. Your success is our 
-              success, and we&apos;re committed to your business growth.
+
+            <div className="bg-[#064663]/10 w-16 h-16 rounded-2xl flex items-center justify-center mb-6">
+              <Award className="w-8 h-8 text-[#064663]" />
+            </div>
+
+            <h3 className="text-2xl font-bold text-[#041C32] mb-4">
+              Our Promise
+            </h3>
+
+            <p className="text-gray-600 leading-relaxed">
+              We promise consistent quality, competitive
+              pricing, and reliable service for every client.
             </p>
+
           </motion.div>
         </div>
 
@@ -121,18 +183,26 @@ export default function AboutPage() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="bg-gradient-to-r from-ocean-600 to-ocean-800 text-white p-12 rounded-lg text-center"
+          className="rounded-3xl overflow-hidden relative"
         >
-          <h2 className="text-4xl font-bold mb-4">Our Team</h2>
-          <p className="text-xl text-ocean-100 max-w-3xl mx-auto">
-            Our experienced team of seafood specialists, quality control experts, and customer 
-            service professionals work together to ensure you receive the best products and service. 
-            With decades of combined experience in the industry, we understand your needs and are 
-            here to help your business thrive.
-          </p>
+
+          <div className="bg-gradient-to-r from-[#041C32] via-[#04293A] to-[#064663] p-14 text-center text-white">
+
+            <h2 className="text-4xl md:text-5xl font-bold mb-6">
+              Our Team
+            </h2>
+
+            <p className="text-xl text-gray-200 max-w-4xl mx-auto leading-relaxed">
+              Our experienced seafood specialists and customer
+              support team work together to ensure premium
+              quality products and excellent service for every client.
+            </p>
+
+          </div>
+
         </motion.div>
+
       </div>
     </div>
   );
 }
-

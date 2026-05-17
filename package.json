@@ -3,11 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
+  "dev": "node --max-old-space-size=6144 node_modules/next/dist/bin/next dev",
+  "build": "node --max-old-space-size=6144 node_modules/next/dist/bin/next build",
+  "start": "next start",
+  "lint": "next lint"
+},
+
+
   "dependencies": {
     "framer-motion": "^11.11.17",
     "lucide-react": "^0.460.0",

@@ -40,7 +40,7 @@ export default function HeroSection() {
           >
             Premium Dry Fish
             <br />
-            <span className="text-[#F2A900]">
+            <span className="text-[#d39a09]">
               Wholesale Supplier
             </span>
           </motion.h1>
@@ -50,7 +50,7 @@ export default function HeroSection() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="text-xl md:text-2xl text-gray-200 mb-10 max-w-3xl mx-auto leading-relaxed"
+            className="text-xl md:text-2xl sm:text-1xl text-gray-200 mb-10 max-w-3xl mx-auto leading-relaxed"
           >
             Serving businesses with the finest quality dried seafood
             products for over two decades. Trusted by restaurants
